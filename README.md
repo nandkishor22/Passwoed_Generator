@@ -1,6 +1,6 @@
 # 🔒 NextGen Password Generator 
 
-![Project Banner](./public/banner.png) *<!-- Consider adding a banner image -->*
+![Project Banner](https://raw.githubusercontent.com/nandkishor22/Passwoed_Generator/refs/heads/main/Public/banner.png) *<!-- Consider adding a banner image -->*
 
 A modern password generation solution with advanced security features and seamless integration capabilities.
 
