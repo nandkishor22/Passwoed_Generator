@@ -1,0 +1,36 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/generate-password",
+      "dest": "/src/app/api/generate-password/route.ts",
+      "methods": ["POST"]
+    },
+    {
+      "src": "/",
+      "dest": "/src/app/page.tsx",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/src/app/$1"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "/src/app/api/:path*"
+    }
+  ],
+  "headers": {
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+    "Access-Control-Allow-Headers": "Content-Type, Authorization"
+  }
+}
