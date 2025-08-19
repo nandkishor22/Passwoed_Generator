@@ -21,16 +21,6 @@ A modern password generation solution with advanced security features and seamle
 - **📘 TypeScript 5** - Type-safe development
 - **🎨 Tailwind CSS** - Utility-first styling
 
-### Security
-- **🔑 Bcrypt** - Password hashing
-- **🔒 Crypto** - Node.js crypto module
-- **🎯 JWT** - Secure authentication
-
-### Database
-- **🗄️ Prisma** - Modern ORM
-- **📦 PostgreSQL** - Primary database
-- **⚡ Redis** - Rate limiting cache
-
 ### UI Components
 - **🧩 shadcn/ui** - Accessible components
 - **📊 Recharts** - Data visualization
@@ -41,85 +31,13 @@ A modern password generation solution with advanced security features and seamle
 ### Prerequisites
 - Node.js 18+
 - npm 9+
-- PostgreSQL 12+
-- Redis 6+
 
 ### Installation
 ```bash
 git clone https://github.com/yourusername/password-generator.git
 cd password-generator
 npm install
-cp .env.example .env
-npx prisma migrate dev
 npm run dev
-```
-
-## 🚀 Vercel Deployment Guide
-
-### 1. Prerequisites
-- GitHub account with the repository
-- Vercel account (free tier available)
-
-### 2. One-Click Deployment
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fyourusername%2Fpassword-generator)
-
-### 3. Manual Deployment
-```bash
-# Install Vercel CLI globally
-npm install -g vercel
-
-# Authenticate with Vercel
-vercel login
-
-# Initialize project
-vercel init
-
-# Push to production
-vercel deploy --prod
-```
-
-### 4. Environment Configuration
-In Vercel dashboard > Project Settings > Environment Variables:
-```env
-DATABASE_URL="postgres://user:pass@host:port/db"
-JWT_SECRET="your-32-character-secret"
-REDIS_URL="redis://default:pass@host:port"
-NEXT_PUBLIC_API_URL=https://your-domain.vercel.app
-```
-
-### 5. Database Setup
-1. Create PostgreSQL database using Vercel Storage
-2. Connect to your database using connection string
-3. Run migrations:
-```bash
-npx prisma migrate deploy
-```
-
-### 6. Post-Deployment
-1. Configure custom domain in Vercel settings
-2. Enable SSL/TLS encryption
-3. Set up automatic CI/CD with GitHub integration
-4. Monitor performance in Vercel Analytics
-
-### 7. Troubleshooting
-- Check deployment logs in Vercel dashboard
-- Test API endpoints using Vercel's Edge Network
-- Rollback to previous deployment if needed
-
-## 📚 API Documentation
-
-**Base URL:** `http://localhost:3000/api`
-
-| Endpoint                | Method | Description                     |
-|-------------------------|--------|---------------------------------|
-| `/generate-password`    | POST   | Generate secure password        |
-| `/analyze-strength`     | POST   | Password strength analysis      |
-| `/history`              | GET    | Get generation history          |
-
-```bash
-curl -X POST http://localhost:3000/api/generate-password \
-  -H "Content-Type: application/json" \
-  -d '{"length": 16, "includeSymbols": true}'
 ```
 
 ## 📂 Project Structure
@@ -146,11 +64,14 @@ curl -X POST http://localhost:3000/api/generate-password \
 MIT License - see [LICENSE](LICENSE) for details
 
 ## 🙏 Acknowledgments
+- Next.js team for the framework
+- Shadcn/ui for component library
+- Cryptographic community for security best practices
 
 ## 🌐 Live Demo
 
-Check out our live deployment on Vercel:
-https://password-generator.vercel.app
+Experience the password generator live:
+https://passwoed-generator-nextgen.vercel.app/
 - Next.js team for the framework
 - Shadcn/ui for component library
 - Cryptographic community for security best practices
