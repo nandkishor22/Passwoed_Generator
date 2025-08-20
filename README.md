@@ -34,7 +34,7 @@ A modern password generation solution with advanced security features and seamle
 
 ### Installation
 ```bash
-git clone https://github.com/yourusername/password-generator.git
+git clone https://github.com/nandkishor22/Passwoed_Generator.git
 cd password-generator
 npm install
 npm run dev
@@ -71,6 +71,6 @@ MIT License - see [LICENSE](LICENSE) for details
 ## 🌐 Live Demo
 
 Experience the password generator live:
-https://passwoed-generator-nextgen.vercel.app/
+https://passwoed-generator.vercel.app/
 - Next.js team for the framework
 - Shadcn/ui for component library
