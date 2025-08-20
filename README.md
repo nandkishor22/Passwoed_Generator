@@ -74,4 +74,3 @@ Experience the password generator live:
 https://passwoed-generator-nextgen.vercel.app/
 - Next.js team for the framework
 - Shadcn/ui for component library
-- Cryptographic community for security best practices
